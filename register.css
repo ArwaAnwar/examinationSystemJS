@@ -1,0 +1,128 @@
+html{
+    background-image: linear-gradient( to right, #72dacf,#a88bf1, #9674ee, #8a64eb);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 22px;
+}
+#form{
+    width: 500px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(71, 71, 71);
+    display: grid;
+    grid-template-columns: 20% 38% 42%;
+    grid-template-rows: 18% 14% 14% 14% 10%;
+    grid-template-areas:"header header header"
+                        "l-name first last"
+                         "l-email email email"
+                         "l-password password password"
+                         "l-confirmPassword confirmPassword confirmPassword"
+                         "register register register"
+                         ;
+    
+    padding: 30px;
+}
+
+#header{
+    text-align: center;
+    grid-area: header;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
+
+#l-name{
+    grid-area: l-name;
+}
+
+#first{
+    grid-area: first;
+}
+
+#last{
+    grid-area: last;
+}
+
+#l-email{
+    grid-area: l-email;
+}
+
+#email{
+    grid-area: email;
+    
+}
+
+
+#l-password{
+    grid-area: l-password;
+}
+
+#password{
+    grid-area: password;
+}
+
+#l-confirmPassword {
+    grid-area: l-confirmPassword;
+}
+
+#confirmPassword {
+    grid-area: confirmPassword;
+}
+
+input {
+    width: 90%;
+    height: 25px;
+}
+
+#first{
+    width: 86%;
+}
+#last{
+    width: 81%;
+}
+
+#register{
+    grid-area: register;
+    text-align: center;
+}
+
+#register button{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    background-color: rgb(207, 47, 36);
+    box-shadow: 1px 1px 5px rgb(71, 71, 71);
+    border-style: none;
+    margin-bottom: 15px;
+}
+
+#register button:hover{
+    
+    background-color:  rgb(231, 52, 39);
+}
+
+#register button:active{
+    transform: translateY(3px);
+}
+
+span {
+    color: red;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+a{
+    color: rgb(49, 49, 49);
+    display: block;
+    font-size: 15px;
+    margin-bottom: 22px;
+}

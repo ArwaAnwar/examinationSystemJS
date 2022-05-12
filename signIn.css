@@ -1,0 +1,101 @@
+html{
+    background-image: linear-gradient( to right, #72dacf,#a88bf1, #9674ee, #8a64eb);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    padding: 110px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#form{
+    width: 400px;
+    height: 320px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(71, 71, 71);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 28% 24% 14% 15%;
+    grid-template-areas:"header header "
+                         "l-email email"
+                         "l-password password"
+                         "register register"
+                         ;
+    
+    padding: 27px;
+}
+
+#header{
+    text-align: center;
+    grid-area: header;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(78, 78, 78);
+}
+
+#l-email{
+    grid-area: l-email;
+}
+
+#email{
+    grid-area: email;
+    
+}
+
+
+#l-password{
+    grid-area: l-password;
+}
+
+#password{
+    grid-area: password;
+}
+
+input {
+    width: 90%;
+    height: 25px;
+}
+
+#sign{
+    grid-area: register;
+    text-align: center;
+}
+
+#sign button{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    width: 77px;
+    height: 36px;
+    background-color: rgb(207, 47, 36);
+    box-shadow: 1px 1px 5px rgb(71, 71, 71);
+    border-style: none;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+
+#sign button:hover{
+    
+    background-color:  rgb(231, 52, 39);
+}
+
+#sign button:active{
+    transform: translateY(3px);
+}
+
+span {
+    color: red;
+    display: block;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+a{
+    color: rgb(49, 49, 49);
+    display: block;
+    font-size: 15px;
+    margin-bottom: 22px;
+}

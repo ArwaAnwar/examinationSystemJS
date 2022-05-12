@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div  class="container">
+        <div id = "form" class="main">
+                 <div id="header">
+                     Exam Registration
+                 </div>
+                <label id="l-name">Name</label>
+                <input  id="first"  type="text" placeholder="First Name">
+                <input id="last" type="text" placeholder="Last Name">
+                
+                <label id="l-email">E-mail</label>
+                <input id="email" type="email">
+                  
+                <label id="l-password">Password</label>
+                <input id="password" type="password">
+                   
+                <label id="l-confirmPassword">Confirm Password</label>
+                <input id="confirmPassword" type="password">
+                
+                <div id="register">
+                    <button id = "regBtn" onclick="validation()">Register</button>
+                    <a href="signIn.html">already have account? Sign in</a>
+                </div> 
+            </div>
+    </div> <!--end of Form container-->
+    
+    <script src="register.js"></script>
+</body>
+</html>

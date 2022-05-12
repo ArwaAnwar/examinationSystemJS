@@ -1,0 +1,195 @@
+html{
+    background-image: linear-gradient( to right, #72dacf,#a88bf1, #9674ee, #8a64eb);
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.container{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.main{
+    background-color: white;
+    width: 89%;
+    height: 500px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(71, 71, 71);
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 10% 80% 10%;
+    grid-template-areas: "barDiv braDiv"
+    "start side "
+    "submit submit";
+
+}
+.barDiv
+{
+    width: 125%;
+    grid-area: barDiv;
+    border-radius: 15px;
+    height: 20px;
+    background-color: #cecece;
+    position: relative;
+}
+#progressBar{
+    border-radius: 15px;
+    position: absolute;
+    height: 100%;
+    background-color: #8a64eb;
+    animation: progress-animation 300s forwards;
+
+}
+
+@keyframes progress-animation {
+    0% { width: 1.5%;} 
+    100% {width: 100%;}
+    
+}
+
+
+.start{
+    height: 100%;
+    width: 97%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(71, 71, 71);
+    grid-area: start;
+    display: flex;
+    flex-direction: column;
+}
+
+#question{
+    margin-top: 50px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    height: 20px;
+}
+
+#answerList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    
+}
+
+#answerList button{
+    width: 300px;
+    height: 30px;
+    color: rgb(48, 48, 48) ;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: #8a64eb;
+    border-radius: 5px;
+}
+
+.buttons{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 70px;
+}
+
+.buttons #next, #prev{
+    width: 40px;
+    height: 30px;
+    color: white;
+    box-shadow:1px 1px 4px rgb(71, 71, 71);
+    border-style: none;
+    background-color:  #8a64eb;
+}
+.buttons #next:hover, #prev:hover{
+    background-color:  #9d7af5;
+}
+
+.buttons #next:active, #prev:active{
+    transform: translateY(1px);
+}
+
+.buttons #mark{
+    width: 40px;
+    height: 30px;
+    color: white;
+    box-shadow:1px 1px 4px rgb(71, 71, 71);
+    border-style: none;
+    background-color:  #5fb9b0;
+    margin-left: 10px;
+
+}
+
+#mark:hover{
+    background-color: #6bcec4;
+}
+
+#mark:active{
+    transform: translateY(1px);
+}
+
+#num{
+    width: 32px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    border-style: solid;
+    border-color: #8a64eb;
+}
+.submit{
+    text-align: center;
+    padding: 15px;
+    grid-area: submit;
+}
+
+#subBtn{
+    width: 100px;
+    height: 30px;
+    color: white;
+    box-shadow:1px 2px 10px rgb(71, 71, 71);
+    border-style: none;
+    background-color:  rgb(207, 47, 36);
+    border-radius: 3px;
+
+}
+
+#subBtn:hover{
+    
+    background-color:  rgb(231, 52, 39);
+}
+
+#subBtn:active{
+    transform: translateY(3px);
+}
+
+.side{
+    height: 95%;
+    padding: 11px;
+    border-radius: 5px;
+    grid-area: side;
+    background-color:#cecece;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side .marked{
+    font-weight: bold;
+    background-color:#8a64eb ;
+    color: white;
+    width: 95%;
+    height: 8.5%;
+    border-style: none;
+    margin-bottom: 5px;
+    border-radius: 3px;
+
+}
+ .marked:hover{
+    background-color:  #9d7af5;
+}
+
+.marked:active{
+    transform: translateY(1px);
+}

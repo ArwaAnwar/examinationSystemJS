@@ -1,0 +1,51 @@
+html{
+    background-image: linear-gradient( to right, #72dacf,#a88bf1, #9674ee, #8a64eb);
+    font-family: Arial, Helvetica, sans-serif;   
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 42px;
+}
+
+.main{
+    background-color: white;
+    width: 50%;
+    height: 450px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px rgb(71, 71, 71);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#congrats{
+    color: rgb(82, 82, 82);
+    font-size: 40px;
+    margin-bottom: 35px;
+    
+}
+#user{
+    color: #8a64eb;
+    font-size: 30px;
+    margin-bottom: 35px;    
+}
+
+#score{
+    display: flex;
+    flex-direction: column;
+    background-color:#8a64eb;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 3px;
+    border-style: none;
+    font-size: 25px;
+}
